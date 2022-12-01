@@ -39,5 +39,9 @@ async function fetchData(urlAPI) {
     `
     )}
     `;
-  } catch (error) {}
+    $content.innerHTML =  view;
+  } catch (error) {
+    console.error(error);
+    prompt("Ocurrió un error en la conexión")
+  }
 })();
